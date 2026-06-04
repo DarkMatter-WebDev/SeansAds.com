@@ -150,12 +150,16 @@ a {
   place-items: center;
   width: 42px;
   height: 42px;
-  border-radius: 12px;
-  background:
-    conic-gradient(from 40deg, var(--blue), var(--red), var(--yellow), var(--g-green), var(--blue));
-  color: #061010;
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 900;
+  padding: 5px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.brand-mark svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .brand-copy {
@@ -701,6 +705,10 @@ h1 {
   .brand-mark {
     width: 30px;
     height: 30px;
+  }
+
+  .brand-mark {
+    padding: 3px;
   }
 
   .brand-divider {

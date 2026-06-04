@@ -740,6 +740,29 @@
       box-shadow: 0 0 26px rgba(234, 67, 53, 0.32);
     }
 
+    .sean-card-icon {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(251, 188, 5, 0.36);
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 35% 18%, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0) 42%),
+        linear-gradient(145deg, rgba(234, 67, 53, 0.2), rgba(251, 188, 5, 0.16));
+      box-shadow: 0 0 26px rgba(234, 67, 53, 0.28);
+      overflow: hidden;
+    }
+
+    .sean-card-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 13%;
+      transform: scale(1.35);
+    }
+
     .card-link.profile-spotlight:hover {
       transform: translateY(-10px) scale(1.015);
       border-color: rgba(234, 67, 53, 0.72);
@@ -1130,6 +1153,10 @@
         height: 30px;
       }
 
+      .brand-mark {
+        padding: 3px;
+      }
+
       .brand-divider {
         height: 24px;
       }
@@ -1298,6 +1325,12 @@
         font-size: 19px;
       }
 
+      .sean-card-icon {
+        width: 38px;
+        height: 38px;
+        margin-bottom: 14px;
+      }
+
       .pricing-card {
         padding: 18px;
       }
@@ -1391,7 +1424,7 @@
     <div class="brand" aria-label="Sean's Google Ads">
       <a class="dm-mark dm-home-link" href="https://darkmatterwebdev.com/" aria-label="Back to Dark Matter Web Services homepage">DM</a>
       <span class="brand-divider" aria-hidden="true"></span>
-      <span class="brand-mark">G</span>
+      <span class="brand-mark" aria-label="Google"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg></span>
       <span class="brand-copy">
         <span class="brand-presenter">Dark Matter Web Services partnered with</span>
         <span class="brand-service">Sean's Google Ads</span>
@@ -1479,7 +1512,7 @@
       </div>
       <div class="grid">
         <a class="card card-link profile-spotlight" href="about-sean.html">
-          <span class="card-icon">S</span>
+          <span class="sean-card-icon"><img src="assets/sean-cochrane-portrait-backgroundless-lossless.webp" alt="Sean Cochrane" loading="lazy" width="88" height="88" /></span>
           <h3>About Sean Cochrane</h3>
           <p>Learn more about Sean, his move from Massachusetts, and the values behind how he works with local businesses.</p>
         </a>
