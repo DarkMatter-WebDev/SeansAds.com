@@ -111,7 +111,7 @@
 
     .top-actions {
       display: grid;
-      grid-template-columns: 82px;
+      grid-template-columns: 236px 220px 82px 142px;
       align-items: center;
       gap: 12px;
       margin-left: auto;
@@ -207,7 +207,7 @@
 
     .brand-service {
       color: var(--text);
-      font-size: 16px;
+      font-size: 32px;
     }
 
     .nav-link {
@@ -234,6 +234,34 @@
       transform: translateY(-1px);
     }
 
+
+    .nav-services {
+      border-color: rgba(138, 43, 226, 0.5);
+      color: #f4ecff;
+      background:
+        linear-gradient(135deg, rgba(138, 43, 226, 0.44), rgba(65, 32, 140, 0.62)),
+        rgba(255, 255, 255, 0.04);
+      box-shadow: 0 0 26px rgba(138, 43, 226, 0.18);
+    }
+
+    .nav-services:hover {
+      border-color: rgba(190, 116, 255, 0.75);
+      box-shadow: 0 0 34px rgba(138, 43, 226, 0.3);
+    }
+
+    .nav-login {
+      border-color: rgba(138, 43, 226, 0.64);
+      color: #f4ecff;
+      background:
+        linear-gradient(135deg, rgba(138, 43, 226, 0.62), rgba(0, 240, 255, 0.16)),
+        rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 24px rgba(138, 43, 226, 0.2);
+    }
+
+    .nav-login:hover {
+      border-color: rgba(0, 240, 255, 0.62);
+      box-shadow: 0 0 32px rgba(0, 240, 255, 0.22), 0 0 24px rgba(138, 43, 226, 0.22);
+    }
     .nav-home {
       border-color: rgba(0, 240, 255, 0.44);
       color: #061010;
@@ -259,6 +287,60 @@
       padding-inline: 20px;
     }
 
+
+    .nav-talk {
+      position: relative;
+      overflow: hidden;
+      border-color: rgba(57, 255, 136, 0.48);
+      color: #061010;
+      background: linear-gradient(90deg, var(--green), var(--cyan), var(--green));
+      background-size: 220% 100%;
+      box-shadow: 0 0 24px rgba(0, 240, 255, 0.28);
+      animation:
+        cta-flow 3.2s ease-in-out infinite,
+        cta-pulse 2.45s ease-in-out infinite,
+        cta-float 3.8s ease-in-out infinite,
+        talk-button-dance 2.6s ease-in-out infinite;
+    }
+
+    .nav-talk::after {
+      content: "";
+      position: absolute;
+      inset: -30% auto -30% -45%;
+      width: 42%;
+      transform: skewX(-18deg);
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+      animation: cta-shine 2.65s ease-in-out infinite;
+    }
+
+    @keyframes cta-flow {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    @keyframes cta-pulse {
+      0%, 100% { box-shadow: 0 0 22px rgba(0, 240, 255, 0.24), 0 0 0 rgba(57, 255, 136, 0); }
+      50% { box-shadow: 0 0 42px rgba(57, 255, 136, 0.48), 0 0 34px rgba(0, 240, 255, 0.22); }
+    }
+
+    @keyframes cta-float {
+      0%, 100% { translate: 0 0; }
+      35% { translate: 0 -3px; }
+      70% { translate: 0 2px; }
+    }
+
+    @keyframes cta-shine {
+      0%, 30% { left: -50%; }
+      70%, 100% { left: 115%; }
+    }
+
+    @keyframes talk-button-dance {
+      0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
+      18% { transform: translate3d(3px, -4px, 0) rotate(1.2deg) scale(1.035); }
+      38% { transform: translate3d(-2px, 2px, 0) rotate(-1deg) scale(1.015); }
+      62% { transform: translate3d(4px, -3px, 0) rotate(0.8deg) scale(1.045); }
+      82% { transform: translate3d(-1px, 1px, 0) rotate(-0.6deg) scale(1.02); }
+    }
     .language-toggle {
       position: relative;
       isolation: isolate;
@@ -555,7 +637,7 @@
     .dm-powered-badge__lockup {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: stretch;
       line-height: 1;
     }
 
@@ -613,7 +695,7 @@
       }
 
       .topbar {
-        align-items: flex-start;
+        align-items: stretch;
         flex-direction: column;
         gap: 8px;
         padding: 10px 0;
@@ -621,8 +703,8 @@
 
       .top-actions {
         display: grid;
-        grid-template-columns: 54px;
-        align-items: flex-start;
+        grid-template-columns: minmax(68px, 0.95fr) minmax(82px, 1.15fr) 54px minmax(56px, 0.75fr);
+        align-items: stretch;
         gap: 5px;
         margin-left: 0;
       }
@@ -647,7 +729,7 @@
       }
 
       .brand-service {
-        font-size: 12px;
+        font-size: 24px;
       }
 
       .nav-link {
@@ -659,8 +741,62 @@
         line-height: 1.05;
       }
 
-      .language-toggle {
-        width: 54px;
+  
+    .nav-talk {
+      position: relative;
+      overflow: hidden;
+      border-color: rgba(57, 255, 136, 0.48);
+      color: #061010;
+      background: linear-gradient(90deg, var(--green), var(--cyan), var(--green));
+      background-size: 220% 100%;
+      box-shadow: 0 0 24px rgba(0, 240, 255, 0.28);
+      animation:
+        cta-flow 3.2s ease-in-out infinite,
+        cta-pulse 2.45s ease-in-out infinite,
+        cta-float 3.8s ease-in-out infinite,
+        talk-button-dance 2.6s ease-in-out infinite;
+    }
+
+    .nav-talk::after {
+      content: "";
+      position: absolute;
+      inset: -30% auto -30% -45%;
+      width: 42%;
+      transform: skewX(-18deg);
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+      animation: cta-shine 2.65s ease-in-out infinite;
+    }
+
+    @keyframes cta-flow {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    @keyframes cta-pulse {
+      0%, 100% { box-shadow: 0 0 22px rgba(0, 240, 255, 0.24), 0 0 0 rgba(57, 255, 136, 0); }
+      50% { box-shadow: 0 0 42px rgba(57, 255, 136, 0.48), 0 0 34px rgba(0, 240, 255, 0.22); }
+    }
+
+    @keyframes cta-float {
+      0%, 100% { translate: 0 0; }
+      35% { translate: 0 -3px; }
+      70% { translate: 0 2px; }
+    }
+
+    @keyframes cta-shine {
+      0%, 30% { left: -50%; }
+      70%, 100% { left: 115%; }
+    }
+
+    @keyframes talk-button-dance {
+      0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
+      18% { transform: translate3d(3px, -4px, 0) rotate(1.2deg) scale(1.035); }
+      38% { transform: translate3d(-2px, 2px, 0) rotate(-1deg) scale(1.015); }
+      62% { transform: translate3d(4px, -3px, 0) rotate(0.8deg) scale(1.045); }
+      82% { transform: translate3d(-1px, 1px, 0) rotate(-0.6deg) scale(1.02); }
+    }
+    .language-toggle {
+        width: auto;
         min-height: 30px;
         border-radius: 9px;
         padding: 3px;
@@ -732,7 +868,7 @@
 
       .form-head,
       .contact-card {
-        align-items: flex-start;
+        align-items: stretch;
         flex-direction: column;
       }
 
@@ -846,7 +982,11 @@
       </span>
     </div>
     <div class="top-actions" aria-label="Acciones principales">
-    <a class="language-toggle language-toggle--es" href="../contact.html" hreflang="en" aria-label="Ver esta página en inglés"><span>EN</span><span>ES</span></a></div>
+      <a class="nav-link nav-services" href="https://darkmatterwebdev.com/es/services.html">Vea nuestros otros servicios</a>
+      <a class="nav-link nav-login" href="https://darkmatterwebdev.com/es/account.html?source=seansads">Acceder al Portal Dark Matter</a>
+      <a class="language-toggle language-toggle--es" href="../contact.html" hreflang="en" aria-label="Ver esta p&aacute;gina en ingl&eacute;s"><span>EN</span><span>ES</span></a>
+      <a class="nav-link nav-talk" href="contact.html">Cont&aacute;ctanos</a>
+    </div>
   </header>
 
   <div class="shell page-back"><a class="nav-link nav-home" href="index.html">Volver al inicio de Google Ads</a></div>

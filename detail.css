@@ -83,6 +83,14 @@ a {
   padding: 22px 0;
 }
 
+.top-actions {
+  display: grid;
+  grid-template-columns: 236px 220px 82px 142px;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -177,7 +185,7 @@ a {
 
 .brand-service {
   color: var(--text);
-  font-size: 16px;
+  font-size: 32px;
 }
 
 .nav-link {
@@ -202,6 +210,34 @@ a {
 
 .nav-link:hover {
   transform: translateY(-1px);
+}
+
+.nav-services {
+  border-color: rgba(138, 43, 226, 0.5);
+  color: #f4ecff;
+  background:
+    linear-gradient(135deg, rgba(138, 43, 226, 0.44), rgba(65, 32, 140, 0.62)),
+    rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 26px rgba(138, 43, 226, 0.18);
+}
+
+.nav-services:hover {
+  border-color: rgba(190, 116, 255, 0.75);
+  box-shadow: 0 0 34px rgba(138, 43, 226, 0.3);
+}
+
+.nav-login {
+  border-color: rgba(138, 43, 226, 0.64);
+  color: #f4ecff;
+  background:
+    linear-gradient(135deg, rgba(138, 43, 226, 0.62), rgba(0, 240, 255, 0.16)),
+    rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 24px rgba(138, 43, 226, 0.2);
+}
+
+.nav-login:hover {
+  border-color: rgba(0, 240, 255, 0.62);
+  box-shadow: 0 0 32px rgba(0, 240, 255, 0.22), 0 0 24px rgba(138, 43, 226, 0.22);
 }
 
 .nav-home {
@@ -725,15 +761,16 @@ h1 {
   }
 
   .brand-service {
-    font-size: 12px;
+    font-size: 24px;
   }
 
-  .topbar > .actions {
+  .top-actions {
     display: grid;
-    grid-template-columns: 54px minmax(66px, 78px);
-    width: auto;
+    grid-template-columns: minmax(68px, 0.95fr) minmax(82px, 1.15fr) 54px minmax(56px, 0.75fr);
+    width: 100%;
     align-items: stretch;
     gap: 5px;
+    margin-left: 0;
     margin-top: 0 !important;
   }
 
