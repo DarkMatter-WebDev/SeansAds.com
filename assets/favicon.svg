@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Dark Matter">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="44%" r="58%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="42%" stop-color="#0068ff"/>
+      <stop offset="78%" stop-color="#7000ff"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="72" y1="88" x2="440" y2="424">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="48%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#7000ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#050505"/>
+  <circle cx="256" cy="256" r="170" fill="url(#core)" opacity="0.9"/>
+  <circle cx="256" cy="256" r="112" fill="#050505"/>
+  <path d="M98 260c54-76 114-116 180-120 54-3 98 18 134 65-46-31-90-42-132-33-54 12-102 49-144 112 54-36 111-49 171-38 38 7 75 23 111 47-56 46-118 66-185 60-56-5-101-28-135-93Z" fill="none" stroke="url(#ring)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M176 326 326 176M184 176l152 152" stroke="#ffffff" stroke-width="24" stroke-linecap="round" opacity="0.92"/>
+</svg>
