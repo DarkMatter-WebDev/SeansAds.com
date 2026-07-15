@@ -9,14 +9,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Sean's Google Ads" />
   <meta property="og:title" content="Sean's Google Ads | Paid search for local businesses" />
-  <meta property="og:description" content="Google Ads setup, cleanup, and management for local businesses, partnered with Dark Matter Web Services." />
+  <meta property="og:description" content="Google Ads setup, cleanup, and management for local businesses." />
   <meta property="og:image" content="https://seansads.com/assets/seans-google-ads-social-preview.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Sean's Google Ads preview with Sean Cochrane and paid search branding" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sean's Google Ads | Paid search for local businesses" />
-  <meta name="twitter:description" content="Google Ads setup, cleanup, and management for local businesses, partnered with Dark Matter Web Services." />
+  <meta name="twitter:description" content="Google Ads setup, cleanup, and management for local businesses." />
   <meta name="twitter:image" content="https://seansads.com/assets/seans-google-ads-social-preview.png" />
   <!-- /Sean Google Ads social preview -->
   <link rel="alternate" hreflang="es" href="es/index.html" />
@@ -113,7 +113,7 @@
 
     .top-actions {
       display: grid;
-      grid-template-columns: 236px 220px 82px 142px;
+      grid-template-columns: 82px 142px;
       align-items: center;
       gap: 12px;
       margin-left: auto;
@@ -127,61 +127,7 @@
       font-weight: 800;
       letter-spacing: -0.03em;
     }
-
-    .dm-mark {
-      position: relative;
-      display: grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      border: 1px solid rgba(0, 240, 255, 0.42);
-      background:
-        radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.22), transparent 34%),
-        linear-gradient(145deg, rgba(0, 240, 255, 0.08), rgba(120, 40, 255, 0.14));
-      box-shadow: 0 0 28px rgba(0, 240, 255, 0.22);
-      color: var(--cyan);
-      font-family: "JetBrains Mono", monospace;
-      font-size: 14px;
-      font-weight: 900;
-      overflow: hidden;
-      text-decoration: none;
-      flex: 0 0 auto;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-    }
-
-    .dm-home-link:hover {
-      border-color: rgba(0, 240, 255, 0.72);
-      box-shadow: 0 0 34px rgba(0, 240, 255, 0.32), 0 0 24px rgba(138, 43, 226, 0.2);
-      transform: translateY(-1px);
-    }
-
-    .dm-mark::before,
-    .dm-mark::after {
-      content: "";
-      position: absolute;
-      width: 58px;
-      height: 16px;
-      border: 1px solid rgba(0, 240, 255, 0.56);
-      border-radius: 50%;
-    }
-
-    .dm-mark::before {
-      transform: rotate(28deg);
-    }
-
-    .dm-mark::after {
-      transform: rotate(-28deg);
-      border-color: rgba(57, 255, 136, 0.38);
-    }
-
-    .brand-divider {
-      width: 1px;
-      height: 38px;
-      background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.22), transparent);
-    }
-
-    .brand-mark {
+.brand-mark {
       display: grid;
       place-items: center;
       width: 42px;
@@ -199,15 +145,7 @@
       gap: 3px;
       line-height: 1.05;
     }
-
-    .brand-presenter {
-      color: var(--green);
-      font: 800 9px "JetBrains Mono", monospace;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    .brand-service {
+.brand-service {
       color: var(--text);
       font-size: 32px;
     }
@@ -235,36 +173,7 @@
     .nav-link:hover {
       transform: translateY(-1px);
     }
-
-    .nav-services {
-      border-color: rgba(138, 43, 226, 0.5);
-      color: #f4ecff;
-      background:
-        linear-gradient(135deg, rgba(138, 43, 226, 0.44), rgba(65, 32, 140, 0.62)),
-        rgba(255, 255, 255, 0.04);
-      box-shadow: 0 0 26px rgba(138, 43, 226, 0.18);
-    }
-
-    .nav-services:hover {
-      border-color: rgba(190, 116, 255, 0.75);
-      box-shadow: 0 0 34px rgba(138, 43, 226, 0.3);
-    }
-
-    .nav-login {
-      border-color: rgba(138, 43, 226, 0.64);
-      color: #f4ecff;
-      background:
-        linear-gradient(135deg, rgba(138, 43, 226, 0.62), rgba(0, 240, 255, 0.16)),
-        rgba(255, 255, 255, 0.05);
-      box-shadow: 0 0 24px rgba(138, 43, 226, 0.2);
-    }
-
-    .nav-login:hover {
-      border-color: rgba(0, 240, 255, 0.62);
-      box-shadow: 0 0 32px rgba(0, 240, 255, 0.22), 0 0 24px rgba(138, 43, 226, 0.22);
-    }
-
-    .language-toggle {
+.language-toggle {
       position: relative;
       isolation: isolate;
       display: inline-flex;
@@ -467,38 +376,7 @@
       color: var(--text);
       background: rgba(255, 255, 255, 0.06);
     }
-
-    .button-darkmatter {
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(166, 92, 255, 0.54);
-      color: #f3e8ff;
-      background:
-        linear-gradient(135deg, rgba(138, 43, 226, 0.64), rgba(35, 16, 78, 0.82)),
-        rgba(255, 255, 255, 0.05);
-      box-shadow: 0 0 28px rgba(138, 43, 226, 0.24);
-    }
-
-    .button-darkmatter::after {
-      content: "";
-      position: absolute;
-      inset: -40% auto -40% -54%;
-      width: 42%;
-      transform: skewX(-18deg);
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.34), transparent);
-      transition: left 0.45s ease;
-    }
-
-    .button-darkmatter:hover {
-      border-color: rgba(203, 163, 255, 0.82);
-      box-shadow: 0 0 38px rgba(138, 43, 226, 0.36);
-    }
-
-    .button-darkmatter:hover::after {
-      left: 118%;
-    }
-
-    .ad-preview {
+.ad-preview {
       position: relative;
       overflow: hidden;
       border: 1px solid var(--line);
@@ -979,157 +857,133 @@
       color: var(--tier-accent);
       font-size: 13px;
     }
-
-    .dm-services-cta {
-      position: relative;
-      overflow: hidden;
-      margin-top: 22px;
-      border: 1px solid rgba(0, 240, 255, 0.22);
-      border-radius: 28px;
-      padding: clamp(28px, 5vw, 54px);
-      background:
-        radial-gradient(circle at 16% 16%, rgba(0, 240, 255, 0.2), transparent 28%),
-        radial-gradient(circle at 88% 18%, rgba(57, 255, 136, 0.16), transparent 30%),
-        linear-gradient(145deg, rgba(10, 21, 22, 0.92), rgba(3, 9, 10, 0.9));
-      box-shadow: 0 30px 110px rgba(0, 0, 0, 0.42);
-    }
-
-    .dm-services-cta::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, rgba(66, 133, 244, 0.26), transparent 32%, rgba(52, 168, 83, 0.18)),
-        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 54px);
-      opacity: 0.48;
-      pointer-events: none;
-    }
-
-    .dm-services-inner {
-      position: relative;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
-      gap: clamp(22px, 4vw, 48px);
-      align-items: center;
-    }
-
-    .dm-service-pills {
-      display: grid;
-      gap: 12px;
-    }
-
-    .dm-service-pill {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 14px;
-      border: 1px solid rgba(255, 255, 255, 0.11);
-      border-radius: 16px;
-      padding: 15px 16px;
-      background: rgba(0, 0, 0, 0.24);
-      color: var(--muted);
-      font-weight: 700;
-    }
-
-    .dm-service-pill strong {
-      color: var(--text);
-    }
-
-    .dm-service-pill span {
-      color: var(--cyan);
-      font-family: "JetBrains Mono", monospace;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      white-space: nowrap;
-    }
-
-    .footer {
+.footer {
       padding: 44px 0 34px;
       color: rgba(244, 247, 247, 0.52);
       font-size: 14px;
       text-align: center;
     }
 
-    .mini-powered-by-bar {
-      display: flex;
-      justify-content: center;
-      padding: 26px 0 4px;
-    }
+.site-footer {
+  margin-top: clamp(34px, 6vw, 72px);
+  padding: 0 0 34px;
+  color: rgba(244, 247, 247, 0.72);
+  text-align: left;
+}
 
-    .dm-powered-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 14px;
-      padding: 15px 18px;
-      border: 1px solid rgba(0, 240, 255, 0.22);
-      border-radius: 18px;
-      background: rgba(0, 240, 255, 0.08);
-      color: var(--text);
-      text-decoration: none;
-      box-shadow: 0 0 24px rgba(0, 240, 255, 0.12), inset 0 0 20px rgba(112, 0, 255, 0.08);
-      animation: dm-nebula-pulse 4s ease-in-out infinite;
-    }
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.45fr) repeat(3, minmax(145px, 1fr));
+  gap: clamp(20px, 3vw, 34px);
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
 
-    .dm-powered-badge:hover {
-      border-color: rgba(0, 240, 255, 0.4);
-      box-shadow: 0 0 32px rgba(112, 0, 255, 0.2), inset 0 0 24px rgba(0, 240, 255, 0.1);
-    }
+.site-footer__brand {
+  display: grid;
+  gap: 14px;
+  max-width: 430px;
+}
 
-    .dm-powered-badge__icon {
-      width: 24px;
-      height: 24px;
-      color: var(--cyan);
-      flex: 0 0 auto;
-    }
+.site-footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
 
-    .dm-powered-badge__lockup {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      line-height: 1;
-    }
+.site-footer__mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--blue);
+  font: 900 18px Inter, sans-serif;
+}
 
-    .dm-powered-badge__label {
-      margin-bottom: 8px;
-      color: rgba(244, 247, 247, 0.56);
-      font: 800 10px "JetBrains Mono", monospace;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
+.site-footer__brand p,
+.site-footer__bottom {
+  margin: 0;
+  color: rgba(244, 247, 247, 0.58);
+  line-height: 1.6;
+}
 
-    .dm-powered-badge__name {
-      background: linear-gradient(120deg, #fff 0%, var(--cyan) 38%, #8a2be2 88%);
-      background-size: 200% auto;
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      font-size: 24px;
-      font-weight: 900;
-      letter-spacing: -0.02em;
-      filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.5));
-      animation: dm-brand-shimmer 6s ease-in-out infinite;
-    }
+.site-footer__contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+}
 
-    .dm-powered-badge__subtext {
-      margin-top: 3px;
-      color: rgba(244, 247, 247, 0.52);
-      font: 800 9px "JetBrains Mono", monospace;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-    }
+.site-footer__contact a,
+.site-footer__nav a {
+  color: rgba(244, 247, 247, 0.76);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
 
-    @keyframes dm-brand-shimmer {
-      0%, 100% { background-position: 0% center; }
-      50% { background-position: 100% center; }
-    }
+.site-footer__contact a:hover,
+.site-footer__nav a:hover {
+  color: var(--cyan);
+}
 
-    @keyframes dm-nebula-pulse {
-      0%, 100% { box-shadow: 0 0 20px rgba(0, 240, 255, 0.1), inset 0 0 16px rgba(112, 0, 255, 0.06); }
-      50% { box-shadow: 0 0 32px rgba(112, 0, 255, 0.2), inset 0 0 24px rgba(0, 240, 255, 0.1); }
-    }
+.site-footer__nav {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
 
-    @media (max-width: 860px) {
+.site-footer__nav h2 {
+  margin: 0 0 4px;
+  color: var(--green);
+  font: 800 11px "JetBrains Mono", monospace;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.site-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+}
+
+@media (max-width: 860px) {
+  .site-footer {
+    margin-top: 28px;
+    padding-bottom: 26px;
+  }
+
+  .site-footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 18px;
+  }
+
+  .site-footer__brand {
+    grid-column: 1 / -1;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-footer__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
       .shell {
         width: auto;
         margin-right: 14px;
@@ -1146,9 +1000,7 @@
       .brand {
         gap: 7px;
       }
-
-      .dm-mark,
-      .brand-mark {
+  .brand-mark {
         width: 30px;
         height: 30px;
       }
@@ -1156,27 +1008,16 @@
       .brand-mark {
         padding: 3px;
       }
-
-      .brand-divider {
-        height: 24px;
-      }
-
-      .brand-copy {
+.brand-copy {
         max-width: min(68vw, 240px);
       }
-
-      .brand-presenter {
-        font-size: 6.4px;
-        letter-spacing: 0.1em;
-      }
-
-      .brand-service {
+.brand-service {
         font-size: 24px;
       }
 
       .top-actions {
         display: grid;
-        grid-template-columns: minmax(68px, 0.95fr) minmax(82px, 1.15fr) 54px minmax(56px, 0.75fr);
+        grid-template-columns: minmax(54px, 82px) minmax(96px, 142px);
         width: 100%;
         align-items: stretch;
         gap: 5px;
@@ -1193,12 +1034,7 @@
         line-height: 1.05;
         text-align: center;
       }
-
-      .nav-login {
-        flex-basis: auto;
-      }
-
-      .language-toggle {
+.language-toggle {
         width: auto;
         min-height: 30px;
         border-radius: 9px;
@@ -1223,7 +1059,6 @@
       }
 
       .hero,
-      .dm-services-inner,
       .pricing {
         grid-template-columns: 1fr;
       }
@@ -1302,8 +1137,7 @@
         margin-bottom: 16px;
       }
 
-      .section-head h2,
-      .dm-services-cta h2 {
+      .section-head h2 {
         font-size: clamp(27px, 8vw, 36px);
         line-height: 1.02;
       }
@@ -1311,11 +1145,7 @@
       .card,
       .ad-window,
       .pricing-card,
-      .dm-services-cta {
-        border-radius: 18px;
-      }
-
-      .card,
+.card,
       .ad-window {
         padding: 20px;
       }
@@ -1353,24 +1183,7 @@
       .price {
         font-size: clamp(38px, 13vw, 52px);
       }
-
-      .dm-service-pill {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .dm-powered-badge {
-        width: 100%;
-        max-width: 330px;
-        gap: 10px;
-        padding: 13px 14px;
-      }
-
-      .dm-powered-badge__name {
-        font-size: 20px;
-      }
-
-      .mobile-grid-orb {
+.mobile-grid-orb {
         position: fixed;
         left: var(--orb-x, calc(100vw - 68px));
         top: var(--orb-y, calc(100vh - 92px));
@@ -1422,17 +1235,12 @@
   <canvas class="grid-canvas" aria-hidden="true"></canvas>
   <header class="shell topbar">
     <div class="brand" aria-label="Sean's Google Ads">
-      <a class="dm-mark dm-home-link" href="https://darkmatterwebdev.com/" aria-label="Back to Dark Matter Web Services homepage">DM</a>
-      <span class="brand-divider" aria-hidden="true"></span>
       <span class="brand-mark" aria-label="Google"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg></span>
       <span class="brand-copy">
-        <span class="brand-presenter">Dark Matter Web Services partnered with</span>
         <span class="brand-service">Sean's Google Ads</span>
       </span>
     </div>
     <div class="top-actions" aria-label="Top actions">
-      <a class="nav-link nav-services" href="https://darkmatterwebdev.com/services.html">See our other services</a>
-      <a class="nav-link nav-login" href="https://darkmatterwebdev.com/account.html?source=seansads">Log in through Dark Matter Portal</a>
       <a class="language-toggle language-toggle--en" href="es/index.html" hreflang="es" aria-label="Ver esta pagina en espanol"><span>EN</span><span>ES</span></a>
       <a class="nav-link nav-talk" href="contact.html">Contact Us</a>
     </div>
@@ -1602,47 +1410,48 @@
         <p class="lead">Tell us what service, area, or offer you want people to find. We will look at the search opportunity, the landing page, and the campaign structure before you start spending.</p>
         <div class="actions">
           <a class="button button-primary" href="contact.html">Book a Google Ads consult</a>
-          <a class="button button-darkmatter" href="https://darkmatterwebdev.com/services.html">Back to Dark Matter services</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="shell section">
-      <div class="dm-services-cta">
-        <div class="dm-services-inner">
-          <div>
-            <div class="eyebrow">Also by Dark Matter</div>
-            <h2>Need more than ads?</h2>
-            <p class="lead">Sean's Google Ads can help with paid search, and Dark Matter can support the rest of the digital system around it: websites, hosting, care plans, client portals, local tech setup, and ongoing updates.</p>
-            <div class="actions">
-              <a class="button button-darkmatter" href="https://darkmatterwebdev.com/services.html">Explore Dark Matter services</a>
-              <a class="button button-darkmatter" href="https://darkmatterwebdev.com/">Visit Dark Matter</a>
-              <a class="button button-darkmatter" href="https://darkmatterwebdev.com/account.html?source=seansads">Log in through Dark Matter Portal</a>
-            </div>
-          </div>
-          <div class="dm-service-pills" aria-label="Dark Matter service paths">
-            <div class="dm-service-pill"><strong>Website design, hosting, and care</strong><span>Web services</span></div>
-            <div class="dm-service-pill"><strong>Business web apps and client portals</strong><span>Apps</span></div>
-            <div class="dm-service-pill"><strong>In-home tech and office network setup</strong><span>Local IT</span></div>
-          </div>
         </div>
       </div>
     </section>
   </main>
-  <div class="mini-powered-by-bar shell">
-    <a class="dm-powered-badge" href="https://darkmatterwebdev.com/built-by.html" aria-label="This website powered by Dark Matter Web Services - view referral landing page">
-      <svg class="dm-powered-badge__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/>
-      </svg>
-      <span class="dm-powered-badge__lockup">
-        <span class="dm-powered-badge__label">This website powered by</span>
-        <span class="dm-powered-badge__name">DARK MATTER</span>
-        <span class="dm-powered-badge__subtext">Web Services</span>
-      </span>
-    </a>
-  </div>
-  <footer class="shell footer">
-    Built as a standalone landing page for Sean's Google Ads. Future hosting/domain can point directly to this folder's `index.html`.
+  <footer class="shell footer site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="site-footer__logo" href="index.html" aria-label="Sean's Google Ads home">
+          <span class="site-footer__mark" aria-hidden="true">G</span>
+          <span>Sean's Google Ads</span>
+        </a>
+        <p>Focused Google Ads setup, cleanup, landing page alignment, and ongoing paid-search support for local businesses.</p>
+        <div class="site-footer__contact">
+          <a href="tel:+16178609914">1-617-860-9914</a>
+          <a href="mailto:SCochrane495@gmail.com?subject=Google%20Ads%20Consultation">SCochrane495@gmail.com</a>
+        </div>
+      </div>
+      <nav class="site-footer__nav" aria-label="Services">
+        <h2>Services</h2>
+        <a href="campaign-setup.html">Campaign setup</a>
+        <a href="landing-page-alignment.html">Landing page alignment</a>
+        <a href="ongoing-cleanup.html">Ongoing cleanup</a>
+      </nav>
+      <nav class="site-footer__nav" aria-label="Plans">
+        <h2>Plans</h2>
+        <a href="pricing-launch.html">Launch Package</a>
+        <a href="pricing-essential.html">Ads Essential</a>
+        <a href="pricing-growth.html">Ads Growth</a>
+        <a href="pricing-dominance.html">Ads Dominance</a>
+      </nav>
+      <nav class="site-footer__nav" aria-label="Company">
+        <h2>Company</h2>
+        <a href="about-sean.html">About Sean</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="es/index.html" hreflang="es">Espanol</a>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <span>Sean's Google Ads</span>
+      <span>Paid search support for local businesses.</span>
+    </div>
   </footer>
   <script>
     (() => {
